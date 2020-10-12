@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+bool isleap (int x)
+{
+	bool status=true;
+	if (x%4!=0){
+		status=false;
+	}
+	return status;
+}
+int main()
+{
+	int x;
+	cout<<"please enter year"<<endl;
+	cin>>x;
+	cout<<isleap(x)<<endl;
+	return 0;
+}
